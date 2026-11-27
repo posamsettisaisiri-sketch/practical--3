@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Online Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <h1>Foodie</h1>
+
+    <nav aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <section id="home" class="hero">
+        <h2>Discover Delicious Food</h2>
+        <p>Order your favourite food from the best restaurants.</p>
+        <a href="#restaurants" class="order-btn">Explore Restaurants</a>
+    </section>
+
+    <section id="categories" class="categories">
+        <h2>Food Categories</h2>
+
+        <div class="category-list">
+            <button class="category-btn" data-category="all">All</button>
+            <button class="category-btn" data-category="biryani">Biryani</button>
+            <button class="category-btn" data-category="pizza">Pizza</button>
+            <button class="category-btn" data-category="burger">Burger</button>
+            <button class="category-btn" data-category="dessert">Desserts</button>
+        </div>
+    </section>
+
+    <section id="restaurants" class="restaurants">
+        <h2>Popular Restaurants</h2>
+
+        <div class="restaurant-grid">
+
+            <article class="restaurant-card" data-category="biryani">
+                <div class="food-image">🍛</div>
+                <h3>Paradise Biryani</h3>
+                <p>Delicious Hyderabadi Biryani</p>
+                <p>Rating: ⭐ 4.5</p>
+                <p>Delivery: 30 minutes</p>
+                <button class="order-btn" data-restaurant="Paradise Biryani">Order Now</button>
+            </article>
+
+            <article class="restaurant-card" data-category="pizza">
+                <div class="food-image">🍕</div>
+                <h3>Pizza Palace</h3>
+                <p>Fresh and cheesy pizzas</p>
+                <p>Rating: ⭐ 4.3</p>
+                <p>Delivery: 25 minutes</p>
+                <button class="order-btn" data-restaurant="Pizza Palace">Order Now</button>
+            </article>
+
+            <article class="restaurant-card" data-category="burger">
+                <div class="food-image">🍔</div>
+                <h3>Burger House</h3>
+                <p>Tasty and crispy burgers</p>
+                <p>Rating: ⭐ 4.2</p>
+                <p>Delivery: 20 minutes</p>
+                <button class="order-btn" data-restaurant="Burger House">Order Now</button>
+            </article>
+
+            <article class="restaurant-card" data-category="dessert">
+                <div class="food-image">🍰</div>
+                <h3>Sweet Treats</h3>
+                <p>Delicious cakes and desserts</p>
+                <p>Rating: ⭐ 4.6</p>
+                <p>Delivery: 35 minutes</p>
+                <button class="order-btn" data-restaurant="Sweet Treats">Order Now</button>
+            </article>
+
+            <article class="restaurant-card" data-category="biryani">
+                <div class="food-image">🍗</div>
+                <h3>Spice Kitchen</h3>
+                <p>Traditional spicy food</p>
+                <p>Rating: ⭐ 4.4</p>
+                <p>Delivery: 30 minutes</p>
+                <button class="order-btn" data-restaurant="Spice Kitchen">Order Now</button>
+            </article>
+
+            <article class="restaurant-card" data-category="pizza">
+                <div class="food-image">🍕</div>
+                <h3>Italian Corner</h3>
+                <p>Authentic Italian flavours</p>
+                <p>Rating: ⭐ 4.1</p>
+                <p>Delivery: 40 minutes</p>
+                <button class="order-btn" data-restaurant="Italian Corner">Order Now</button>
+            </article>
+
+        </div>
+        <p id="message" role="status" aria-live="polite"></p>
+    </section>
+
+</main>
+
+<footer id="contact">
+    <h2>Foodie</h2>
+    <p>Fresh Food Delivered to Your Doorstep.</p>
+    <p>Email: foodie@example.com</p>
+    <p>&copy; 2026 Foodie. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
